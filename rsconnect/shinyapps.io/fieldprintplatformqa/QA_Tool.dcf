@@ -1,0 +1,13 @@
+name: QA_Tool
+title: QA_Tool
+username:
+account: fieldprintplatformqa
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5252692
+bundleId: 6138919
+url: https://fieldprintplatformqa.shinyapps.io/QA_Tool/
+when: 1658936964.18673
+lastSyncTime: 1658936964.18675
+asMultiple: FALSE
+asStatic: FALSE
