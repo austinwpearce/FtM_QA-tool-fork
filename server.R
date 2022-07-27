@@ -402,7 +402,7 @@ server <- function(input, output, session){
       ggplot(aes(x = `Crop Year`, y = get(y_input))) +
       geom_boxplot(width = 0.2, outlier.shape = NA) +
       geom_jitter(width = 0.05, height = 0.05)+
-      labs(x = "Crop Year", y = paste(stringr::str_wrap(y_input, width = 30))) +
+      labs(x = "Crop Year", y = paste(stringr::str_wrap(y_input, width = 20))) +
       facet_wrap(~ Crop, scales = "free", ncol = 2) +
       ggthemes::theme_base() +
       theme(rect = element_rect(fill = "white", colour = "white"), 
@@ -743,7 +743,7 @@ server <- function(input, output, session){
       ggplot(aes(x = `Crop Year`, y = get(y_input))) +
       geom_boxplot(width = 0.2, outlier.shape = NA) +
       geom_jitter(width = 0.05, height = 0.05) +
-      labs(x = "Crop Year", y = paste(stringr::str_wrap(y_input, width = 30))) +
+      labs(x = "Crop Year", y = paste(stringr::str_wrap(y_input, width = 20))) +
       facet_wrap(~ Crop, scales = "free", ncol = 2) +
       ggthemes::theme_base() +
       theme(rect = element_rect(fill = "white", color = "white"), 
@@ -1547,7 +1547,7 @@ server <- function(input, output, session){
       #               input$sandbox_y_dropdown, ": ", get(input$sandbox_y_dropdown)))) +
       #geom_point() +
       geom_jitter(width = 0.05, size = 2) +
-      labs(y = paste(stringr::str_wrap(input$sandbox_y_dropdown, width = 30)), 
+      labs(y = paste(stringr::str_wrap(input$sandbox_y_dropdown, width = 20)), 
            x = paste(input$sandbox_x_dropdown), color = paste(input$sandbox_grouping_var)) + #,
       #     title = paste("X-axis Variable:", input$sandbox_x_dropdown, "|",
       #                   "Y-axis Variable:", input$sandbox_y_dropdown)) +
