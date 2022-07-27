@@ -11,6 +11,9 @@ options(scipen = 999) # to prevent R from using scientific notation
 # Look-up table needed for subsetting
 lookup_names <- read_csv("lookup_names.csv")
 
+# Trying to overwrite confusing column names 7/22
+lookup_colnames <- read_csv("new_column_names_mapping.csv")
+
 # Help text
 message1 <- "Here you can search the raw comprehensive data output file with enhanced filtering and column selection by groups. Choose the group of columns that are of interest to you from the dropdown menu below. You can sort by values or add text searches above each column to find fields or targeted inputs."
 

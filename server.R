@@ -105,7 +105,11 @@ server <- function(input, output, session){
                                             replacement = ""),
              `All Irrigation Water Applied (acre inch / acre)` =
                `Groundwater Irrigation: Water Applied (acre_inch / acre)` +
-               `Surface Water Irrigation: Water Applied (acre_inch / acre)`) #%>%
+               `Surface Water Irrigation: Water Applied (acre_inch / acre)`) %>% 
+      #-trying to rename manure column 7/22
+      rename("Manure Application 1: Pounds of manure N applied per acre (lbs N/acre)" = 
+               "Manure Application 1: Pounds of N per Acre (lb/acre)")
+    #%>%
     # 2021-09-03 Lime content has a proper name now
     #  rename("Lime Amount (short ton / acre)" = `Product Amount (ton / acre)`)
 
@@ -714,7 +718,7 @@ server <- function(input, output, session){
       y_input <- input$chem_subcomponents
       validate(need(chem_crop_years(), message = "No applications were found for the selected category"))
     } else if (input$fert_options == "N from Manure") {
-      y_input <- "Manure Application 1: Pounds of N per Acre (lb/acre)"
+      y_input <- "Manure Application 1: Pounds of manure N applied per acre (lbs N/acre)"
     }
     
     # Dropdown options for Y-axis variable and crop year

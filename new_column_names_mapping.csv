@@ -1,0 +1,7 @@
+"The column names are sometimes confusing when taken out of context. Here I made a reference table to map old column names to new, preferred names based on user experiences",
+ ,
+Created on July 27 2022,
+,
+,
+col_name,new_col_name
+Manure Application 1: Pounds of N per Acre (lb/acre),Manure Application 1: Pounds of manure N applied per acre (lbs N /acre)
