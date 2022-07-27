@@ -1,16 +1,8 @@
-library(shiny)
-library(shinyBS)
-library(shinyalert)
-library(shinyWidgets)
-library(shinyLP)
-library(tidyverse)
-library(leaflet)
-library(htmlwidgets)
-library(sf)
-library(webshot)
-library(kableExtra)
-library(plotly)
-library(scales)
+library(pacman)
+
+p_load(shiny, shinyBS, shinyalert, shinyWidgets, shinyLP,
+       tidyverse, leaflet, htmlwidgets, sf, webshot, kableExtra, plotly, scales, 
+       DT, rpivotTable)
 
 webshot::install_phantomjs() # needed to download map image
 
