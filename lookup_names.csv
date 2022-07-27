@@ -1,0 +1,485 @@
+variable,group,label
+Grower ID,general_info,Field Information
+Field Name,general_info,Field Information
+Field Size (ac),general_info,Field Information
+Location,general_info,Field Information
+State,general_info,Field Information
+Field GeoJSON,general_info,Field Information
+Crop Year,general_info,Field Information
+Crop,general_info,Field Information
+Metric Version,general_info,Field Information
+Adjusted Yield,operation_questions,Operation Questions
+Adjusted Yield Units,operation_questions,Operation Questions
+Land Use Score (acre / yield units),fieldprint_scores,Fieldprint Scores
+Soil Conservation Score (ton / acre / year),fieldprint_scores,Fieldprint Scores
+Water Erosion (ton / acre / year),soil_erosion_components,Soil Erosion Components
+Wind Erosion (ton / acre / year),soil_erosion_components,Soil Erosion Components
+Soil Carbon,fieldprint_scores,Fieldprint Scores
+Irrigation Water Use Score,fieldprint_scores,Fieldprint Scores
+Irrigation Water Use Score Units,fieldprint_scores,Fieldprint Scores
+Energy Use Score,fieldprint_scores,Fieldprint Scores
+Energy Use Score Units,fieldprint_scores,Fieldprint Scores
+Management Energy (btu / yield units),energy_components,Energy Components
+Application Energy (btu / yield units),energy_components,Energy Components
+Manure Loading Energy (btu / yield units),energy_components,Energy Components
+Seed Energy (btu / yield units),energy_components,Energy Components
+Irrigation Energy (btu / yield units),energy_components,Energy Components
+Post-Harvest Energy (btu / yield units),energy_components,Energy Components
+Transportation Energy (btu / yield units),energy_components,Energy Components
+Energy Use (btu / acre),energy_components,Energy Components
+Management Energy (btu / acre),energy_components,Energy Components
+Application Energy (btu / acre),energy_components,Energy Components
+Manure Loading Energy (btu / acre),energy_components,Energy Components
+Seed Energy (btu / acre),energy_components,Energy Components
+Irrigation Energy (btu / acre),energy_components,Energy Components
+Post-Harvest Energy (btu / acre),energy_components,Energy Components
+Transportation Energy (btu / acre),energy_components,Energy Components
+GHG Score,fieldprint_scores,Fieldprint Scores
+GHG Score Units,fieldprint_scores,Fieldprint Scores
+Management Energy Emissions (lbs CO2e / yield units),ghg_components,GHG Components
+Application Energy Emissions (lbs CO2e / yield units),ghg_components,GHG Components
+Manure Loading Energy Emissions (lbs CO2e / yield units),ghg_components,GHG Components
+Seed Energy Emissions (lbs CO2e / yield units),ghg_components,GHG Components
+Irrigation Energy Emissions (lbs CO2e / yield units),ghg_components,GHG Components
+Post-Harvest Energy Emissions (lbs CO2e / yield units),ghg_components,GHG Components
+Transportation Energy Emissions (lbs CO2e / yield units),ghg_components,GHG Components
+Nitrous Oxide Energy Emissions (lbs CO2e / yield units),ghg_components,GHG Components
+Rice Methane Energy Emissions (lbs CO2e / yield units),ghg_components,GHG Components
+Residue Burning Energy Emissions (lbs CO2e / yield units),ghg_components,GHG Components
+GHG per acre (lbs CO2e / acre),ghg_components,GHG Components
+Management Energy Emissions (lbs CO2e / acre),ghg_components,GHG Components
+Application Energy Emissions (lbs CO2e / acre),ghg_components,GHG Components
+Manure Loading Energy Emissions (lbs CO2e / acre),ghg_components,GHG Components
+Seed Energy Emissions (lbs CO2e / acre),ghg_components,GHG Components
+Irrigation Energy Emissions (lbs CO2e / acre),ghg_components,GHG Components
+Post-Harvest Energy Emissions (lbs CO2e / acre),ghg_components,GHG Components
+Transportation Energy Emissions (lbs CO2e / acre),ghg_components,GHG Components
+Nitrous Oxide Energy Emissions (lbs CO2e / acre),ghg_components,GHG Components
+Rice Methane Energy Emissions (lbs CO2e / acre),ghg_components,GHG Components
+Residue Burning Energy Emissions (lbs CO2e / acre),ghg_components,GHG Components
+Water Quality Score,fieldprint_scores,Fieldprint Scores
+Surface Phosphorus Field Sensitivity Category,wq_components,WQ Components
+Subsurface Phosphorus Field Sensitivity Category,wq_components,WQ Components
+Surface Nitrogen Field Sensitivity Category,wq_components,WQ Components
+Subsurface Nitrogen Field Sensitivity Category,wq_components,WQ Components
+Surface Phosphorus Field Sensitivity Score,wq_components,WQ Components
+Subsurface Phosphorus Field Sensitivity Score,wq_components,WQ Components
+Surface Nitrogen Field Sensitivity Score,wq_components,WQ Components
+Subsurface Nitrogen Field Sensitivity Score,wq_components,WQ Components
+Surface Phosphorus Risk Mitigation Score,wq_components,WQ Components
+Subsurface Phosphorus Risk Mitigation Score,wq_components,WQ Components
+Surface Nitrogen Risk Mitigation Score,wq_components,WQ Components
+Subsurface Nitrogen Risk Mitigation Score,wq_components,WQ Components
+Surface Phosphorus Pathway Ratio,wq_components,WQ Components
+Subsurface Phosphorus Pathway Ratio,wq_components,WQ Components
+Surface Nitrogen Pathway Ratio,wq_components,WQ Components
+Subsurface Nitrogen Pathway Ratio,wq_components,WQ Components
+Surface Phosphorus Pathway Mitigation,wq_components,WQ Components
+Subsurface Phosphorus Pathway Mitigation,wq_components,WQ Components
+Surface Nitrogen Pathway Mitigation,wq_components,WQ Components
+Subsurface Nitrogen Pathway Mitigation,wq_components,WQ Components
+Biodiversity Score (Total % Realized HPI),fieldprint_scores,Fieldprint Scores
+Total HPI Score,biodiversity_component,Biodiversity Component
+Slope (%),soil_properties,Soil Properties
+Slope Length (ft),soil_properties,Soil Properties
+Surface Soil Texture Class,soil_properties,Soil Properties
+Was the previous crop residue burned?,rotation_questions,Rotation Questions
+Previous Crop,rotation_questions,Rotation Questions
+Previous Yield,rotation_questions,Rotation Questions
+Previous Yield Units,rotation_questions,Rotation Questions
+How much residue remains on the field from the previous year?,rotation_questions,Rotation Questions
+What is the predominant crop rotation practice used?,rotation_questions,Rotation Questions
+Do you use a cover crop?,rotation_questions,Rotation Questions
+Cover Crop Species,rotation_questions,Rotation Questions
+Cover Crop Establishment Timing,rotation_questions,Rotation Questions
+What is the predominant tillage practice used?,crop_rotation,Crop Rotation
+Crop Rotation System,crop_rotation,Crop Rotation
+Crop Rotation Event JSON,crop_rotation,Crop Rotation
+Does the field have a wind barrier based on NRCS standards?,management_questions,Management Questions
+Tile Drainage System Type,management_questions,Management Questions
+Rice Only: Please select the appropriate water regime used for your rice production,management_questions,Management Questions
+Are you implementing an approved Nutrient Management Plan?,management_questions,Management Questions
+Do you apply nutrients according to the 4 Rs of nutrient stewardship?,management_questions,Management Questions
+Did you apply lime for this crop?,management_questions,Management Questions
+What year was it applied?,management_questions,Management Questions
+Estimated Number of Years Lime will be Applicable (year),management_questions,Management Questions
+Lime Amount (ton / acre),management_questions,Management Questions
+Rice Only: Did you apply Sulfate?,management_questions,Management Questions
+Rice Only: Sulfate Amount (lb / acre),management_questions,Management Questions
+Nutrient (Fertilizer or Manure) Applied?,management_questions,Management Questions
+Nitrogen Applied?,management_questions,Management Questions
+Nitrogen Carry Over (lb / acre),management_questions,Management Questions
+Phosphorus Applied?,management_questions,Management Questions
+Phosphorus Soil Test,management_questions,Management Questions
+Phosphorus Years Applicable,management_questions,Management Questions
+Nutrient Management Techniques,management_questions,Management Questions
+Integrated Pest Management,management_questions,Management Questions
+Was any part of this field converted from a use other than cropland in the past 5 years?,management_questions,Management Questions
+Type of Land Conversion,management_questions,Management Questions
+Converted Area (acres),management_questions,Management Questions
+Do you practice any season enhancements for wildlife habitat?,management_questions,Management Questions
+Water conservation practices,management_questions,Management Questions
+Seeding Rate,management_questions,Management Questions
+Seeding Rate Units,management_questions,Management Questions
+Are Seed Treatments Used?,management_questions,Management Questions
+Rice Only: Planting Method,management_questions,Management Questions
+Rice Only: Cultivar,management_questions,Management Questions
+Alfalfa Only: Establishment Year,management_questions,Management Questions
+Alfalfa Only: Expected Stand Life (year),management_questions,Management Questions
+Is Irrigated?,management_questions,Management Questions
+Water Source,management_questions,Management Questions
+Groundwater Irrigation: Water Applied (acre_inch / acre),operation_questions,Operation Questions
+Groundwater Irrigation: Do you use energy to irrigate the field through pumping?,operation_questions,Operation Questions
+Groundwater Irrigation: Enter exact energy amount?,operation_questions,Operation Questions
+Groundwater Irrigation: Pumping Pressure (psi),operation_questions,Operation Questions
+Groundwater Irrigation: Pumping Depth (ft),operation_questions,Operation Questions
+Groundwater Irrigation: Energy Source,operation_questions,Operation Questions
+Groundwater Irrigation: Electric Amount (kwh),operation_questions,Operation Questions
+Groundwater Irrigation: Fuel Type,operation_questions,Operation Questions
+Groundwater Irrigation: Fuel Amount,operation_questions,Operation Questions
+Groundwater Irrigation: Fuel Amount Units,operation_questions,Operation Questions
+Surface Water Irrigation: Do you practice any water conservation methods?,operation_questions,Operation Questions
+Surface Water Irrigation: Water Applied (acre_inch / acre),operation_questions,Operation Questions
+Surface Water Irrigation: Do you use energy to irrigate the field through pumping?,operation_questions,Operation Questions
+Surface Water Irrigation: Enter exact energy amount?,operation_questions,Operation Questions
+Surface Water Irrigation: Pumping Pressure (psi),operation_questions,Operation Questions
+Surface Water Irrigation: Pumping Depth (ft),operation_questions,Operation Questions
+Surface Water Irrigation: Energy Source,operation_questions,Operation Questions
+Surface Water Irrigation: Electric Amount (kwh),operation_questions,Operation Questions
+Surface Water Irrigation: Fuel Type,operation_questions,Operation Questions
+Surface Water Irrigation: Fuel Amount,operation_questions,Operation Questions
+Surface Water Irrigation: Fuel Amount Units,operation_questions,Operation Questions
+Number of Application Trips,application_trips_summary,Application Trips Summary
+Total N (lb / acre) for All Trips,application_trips_summary,Application Trips Summary
+Total P2O5 (lb / acre) for All Trips,application_trips_summary,Application Trips Summary
+Total K2O (lb / acre) for All Trips,application_trips_summary,Application Trips Summary
+Total Herbicides for All Trips,application_trips_summary,Application Trips Summary
+Total Insecticides for All Trips,application_trips_summary,Application Trips Summary
+Total Fungicides for All Trips,application_trips_summary,Application Trips Summary
+Total Growth Regulators for All Trips,application_trips_summary,Application Trips Summary
+Total Fumigant for All Trips,application_trips_summary,Application Trips Summary
+Total Harvest Aids for All Trips,application_trips_summary,Application Trips Summary
+Application Trip 1: Timing,application_trips,Application Trips
+Application Trip 1: Method,application_trips,Application Trips
+Application Trip 1: Number of Herbicides,application_trips,Application Trips
+Application Trip 1: Number of Insecticides,application_trips,Application Trips
+Application Trip 1: Number of Fungicides,application_trips,Application Trips
+Application Trip 1: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 1: Number of Fumigants,application_trips,Application Trips
+Application Trip 1: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 1: Number of Fertilizers,application_trips,Application Trips
+"Application Trip 1, Fertilizer 1: Fertilizer Type",application_trips,Application Trips
+"Application Trip 1, Fertilizer 1: Fertilizer Rate",application_trips,Application Trips
+"Application Trip 1, Fertilizer 1: Fertilizer Rate Units",application_trips,Application Trips
+"Application Trip 1, Fertilizer 1: Fertilizer Custom Rate Nitrogen (lb/acre)",application_trips,Application Trips
+"Application Trip 1, Fertilizer 1: Fertilizer Custom Rate Phosphorus (lb/acre)",application_trips,Application Trips
+"Application Trip 1, Fertilizer 1: Fertilizer Custom Rate Potassium (lb/acre)",application_trips,Application Trips
+"Application Trip 1, Fertilizer 1: Fertilizer Custom Blend Nitrogen (%)",application_trips,Application Trips
+"Application Trip 1, Fertilizer 1: Fertilizer Custom Blend Phosphorus (%)",application_trips,Application Trips
+"Application Trip 1, Fertilizer 1: Fertilizer Custom Blend Potassium (%)",application_trips,Application Trips
+Application Trip 2: Timing,application_trips,Application Trips
+Application Trip 2: Method,application_trips,Application Trips
+Application Trip 2: Number of Herbicides,application_trips,Application Trips
+Application Trip 2: Number of Insecticides,application_trips,Application Trips
+Application Trip 2: Number of Fungicides,application_trips,Application Trips
+Application Trip 2: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 2: Number of Fumigants,application_trips,Application Trips
+Application Trip 2: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 2: Number of Fertilizers,application_trips,Application Trips
+"Application Trip 2, Fertilizer 1: Fertilizer Type",application_trips,Application Trips
+"Application Trip 2, Fertilizer 1: Fertilizer Rate",application_trips,Application Trips
+"Application Trip 2, Fertilizer 1: Fertilizer Rate Units",application_trips,Application Trips
+"Application Trip 2, Fertilizer 1: Fertilizer Custom Rate Nitrogen (lb/acre)",application_trips,Application Trips
+"Application Trip 2, Fertilizer 1: Fertilizer Custom Rate Phosphorus (lb/acre)",application_trips,Application Trips
+"Application Trip 2, Fertilizer 1: Fertilizer Custom Rate Potassium (lb/acre)",application_trips,Application Trips
+"Application Trip 2, Fertilizer 1: Fertilizer Custom Blend Nitrogen (%)",application_trips,Application Trips
+"Application Trip 2, Fertilizer 1: Fertilizer Custom Blend Phosphorus (%)",application_trips,Application Trips
+"Application Trip 2, Fertilizer 1: Fertilizer Custom Blend Potassium (%)",application_trips,Application Trips
+Application Trip 3: Timing,application_trips,Application Trips
+Application Trip 3: Method,application_trips,Application Trips
+Application Trip 3: Number of Herbicides,application_trips,Application Trips
+Application Trip 3: Number of Insecticides,application_trips,Application Trips
+Application Trip 3: Number of Fungicides,application_trips,Application Trips
+Application Trip 3: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 3: Number of Fumigants,application_trips,Application Trips
+Application Trip 3: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 3: Number of Fertilizers,application_trips,Application Trips
+"Application Trip 3, Fertilizer 1: Fertilizer Type",application_trips,Application Trips
+"Application Trip 3, Fertilizer 1: Fertilizer Rate",application_trips,Application Trips
+"Application Trip 3, Fertilizer 1: Fertilizer Rate Units",application_trips,Application Trips
+"Application Trip 3, Fertilizer 1: Fertilizer Custom Rate Nitrogen (lb/acre)",application_trips,Application Trips
+"Application Trip 3, Fertilizer 1: Fertilizer Custom Rate Phosphorus (lb/acre)",application_trips,Application Trips
+"Application Trip 3, Fertilizer 1: Fertilizer Custom Rate Potassium (lb/acre)",application_trips,Application Trips
+"Application Trip 3, Fertilizer 1: Fertilizer Custom Blend Nitrogen (%)",application_trips,Application Trips
+"Application Trip 3, Fertilizer 1: Fertilizer Custom Blend Phosphorus (%)",application_trips,Application Trips
+"Application Trip 3, Fertilizer 1: Fertilizer Custom Blend Potassium (%)",application_trips,Application Trips
+Application Trip 4: Timing,application_trips,Application Trips
+Application Trip 4: Method,application_trips,Application Trips
+Application Trip 4: Number of Herbicides,application_trips,Application Trips
+Application Trip 4: Number of Insecticides,application_trips,Application Trips
+Application Trip 4: Number of Fungicides,application_trips,Application Trips
+Application Trip 4: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 4: Number of Fumigants,application_trips,Application Trips
+Application Trip 4: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 4: Number of Fertilizers,application_trips,Application Trips
+"Application Trip 4, Fertilizer 1: Fertilizer Type",application_trips,Application Trips
+"Application Trip 4, Fertilizer 1: Fertilizer Rate",application_trips,Application Trips
+"Application Trip 4, Fertilizer 1: Fertilizer Rate Units",application_trips,Application Trips
+"Application Trip 4, Fertilizer 1: Fertilizer Custom Rate Nitrogen (lb/acre)",application_trips,Application Trips
+"Application Trip 4, Fertilizer 1: Fertilizer Custom Rate Phosphorus (lb/acre)",application_trips,Application Trips
+"Application Trip 4, Fertilizer 1: Fertilizer Custom Rate Potassium (lb/acre)",application_trips,Application Trips
+"Application Trip 4, Fertilizer 1: Fertilizer Custom Blend Nitrogen (%)",application_trips,Application Trips
+"Application Trip 4, Fertilizer 1: Fertilizer Custom Blend Phosphorus (%)",application_trips,Application Trips
+"Application Trip 4, Fertilizer 1: Fertilizer Custom Blend Potassium (%)",application_trips,Application Trips
+Application Trip 5: Timing,application_trips,Application Trips
+Application Trip 5: Method,application_trips,Application Trips
+Application Trip 5: Number of Herbicides,application_trips,Application Trips
+Application Trip 5: Number of Insecticides,application_trips,Application Trips
+Application Trip 5: Number of Fungicides,application_trips,Application Trips
+Application Trip 5: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 5: Number of Fumigants,application_trips,Application Trips
+Application Trip 5: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 5: Number of Fertilizers,application_trips,Application Trips
+"Application Trip 5, Fertilizer 1: Fertilizer Type",application_trips,Application Trips
+"Application Trip 5, Fertilizer 1: Fertilizer Rate",application_trips,Application Trips
+"Application Trip 5, Fertilizer 1: Fertilizer Rate Units",application_trips,Application Trips
+"Application Trip 5, Fertilizer 1: Fertilizer Custom Rate Nitrogen (lb/acre)",application_trips,Application Trips
+"Application Trip 5, Fertilizer 1: Fertilizer Custom Rate Phosphorus (lb/acre)",application_trips,Application Trips
+"Application Trip 5, Fertilizer 1: Fertilizer Custom Rate Potassium (lb/acre)",application_trips,Application Trips
+"Application Trip 5, Fertilizer 1: Fertilizer Custom Blend Nitrogen (%)",application_trips,Application Trips
+"Application Trip 5, Fertilizer 1: Fertilizer Custom Blend Phosphorus (%)",application_trips,Application Trips
+"Application Trip 5, Fertilizer 1: Fertilizer Custom Blend Potassium (%)",application_trips,Application Trips
+Application Trip 6: Timing,application_trips,Application Trips
+Application Trip 6: Method,application_trips,Application Trips
+Application Trip 6: Number of Herbicides,application_trips,Application Trips
+Application Trip 6: Number of Insecticides,application_trips,Application Trips
+Application Trip 6: Number of Fungicides,application_trips,Application Trips
+Application Trip 6: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 6: Number of Fumigants,application_trips,Application Trips
+Application Trip 6: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 6: Number of Fertilizers,application_trips,Application Trips
+"Application Trip 6, Fertilizer 1: Fertilizer Type",application_trips,Application Trips
+"Application Trip 6, Fertilizer 1: Fertilizer Rate",application_trips,Application Trips
+"Application Trip 6, Fertilizer 1: Fertilizer Rate Units",application_trips,Application Trips
+"Application Trip 6, Fertilizer 1: Fertilizer Custom Rate Nitrogen (lb/acre)",application_trips,Application Trips
+"Application Trip 6, Fertilizer 1: Fertilizer Custom Rate Phosphorus (lb/acre)",application_trips,Application Trips
+"Application Trip 6, Fertilizer 1: Fertilizer Custom Rate Potassium (lb/acre)",application_trips,Application Trips
+"Application Trip 6, Fertilizer 1: Fertilizer Custom Blend Nitrogen (%)",application_trips,Application Trips
+"Application Trip 6, Fertilizer 1: Fertilizer Custom Blend Phosphorus (%)",application_trips,Application Trips
+"Application Trip 6, Fertilizer 1: Fertilizer Custom Blend Potassium (%)",application_trips,Application Trips
+Application Trip 7: Timing,application_trips,Application Trips
+Application Trip 7: Method,application_trips,Application Trips
+Application Trip 7: Number of Herbicides,application_trips,Application Trips
+Application Trip 7: Number of Insecticides,application_trips,Application Trips
+Application Trip 7: Number of Fungicides,application_trips,Application Trips
+Application Trip 7: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 7: Number of Fumigants,application_trips,Application Trips
+Application Trip 7: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 7: Number of Fertilizers,application_trips,Application Trips
+"Application Trip 7, Fertilizer 1: Fertilizer Type",application_trips,Application Trips
+"Application Trip 7, Fertilizer 1: Fertilizer Rate",application_trips,Application Trips
+"Application Trip 7, Fertilizer 1: Fertilizer Rate Units",application_trips,Application Trips
+"Application Trip 7, Fertilizer 1: Fertilizer Custom Rate Nitrogen (lb/acre)",application_trips,Application Trips
+"Application Trip 7, Fertilizer 1: Fertilizer Custom Rate Phosphorus (lb/acre)",application_trips,Application Trips
+"Application Trip 7, Fertilizer 1: Fertilizer Custom Rate Potassium (lb/acre)",application_trips,Application Trips
+"Application Trip 7, Fertilizer 1: Fertilizer Custom Blend Nitrogen (%)",application_trips,Application Trips
+"Application Trip 7, Fertilizer 1: Fertilizer Custom Blend Phosphorus (%)",application_trips,Application Trips
+"Application Trip 7, Fertilizer 1: Fertilizer Custom Blend Potassium (%)",application_trips,Application Trips
+Application Trip 8: Timing,application_trips,Application Trips
+Application Trip 8: Method,application_trips,Application Trips
+Application Trip 8: Number of Herbicides,application_trips,Application Trips
+Application Trip 8: Number of Insecticides,application_trips,Application Trips
+Application Trip 8: Number of Fungicides,application_trips,Application Trips
+Application Trip 8: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 8: Number of Fumigants,application_trips,Application Trips
+Application Trip 8: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 8: Number of Fertilizers,application_trips,Application Trips
+Application Trip 8: Fertilizer,application_trips,Application Trips
+Application Trip 9: Timing,application_trips,Application Trips
+Application Trip 9: Method,application_trips,Application Trips
+Application Trip 9: Number of Herbicides,application_trips,Application Trips
+Application Trip 9: Number of Insecticides,application_trips,Application Trips
+Application Trip 9: Number of Fungicides,application_trips,Application Trips
+Application Trip 9: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 9: Number of Fumigants,application_trips,Application Trips
+Application Trip 9: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 9: Number of Fertilizers,application_trips,Application Trips
+Application Trip 9: Fertilizer,application_trips,Application Trips
+Application Trip 10: Timing,application_trips,Application Trips
+Application Trip 10: Method,application_trips,Application Trips
+Application Trip 10: Number of Herbicides,application_trips,Application Trips
+Application Trip 10: Number of Insecticides,application_trips,Application Trips
+Application Trip 10: Number of Fungicides,application_trips,Application Trips
+Application Trip 10: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 10: Number of Fumigants,application_trips,Application Trips
+Application Trip 10: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 10: Number of Fertilizers,application_trips,Application Trips
+Application Trip 10: Fertilizer,application_trips,Application Trips
+Application Trip 11: Timing,application_trips,Application Trips
+Application Trip 11: Method,application_trips,Application Trips
+Application Trip 11: Number of Herbicides,application_trips,Application Trips
+Application Trip 11: Number of Insecticides,application_trips,Application Trips
+Application Trip 11: Number of Fungicides,application_trips,Application Trips
+Application Trip 11: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 11: Number of Fumigants,application_trips,Application Trips
+Application Trip 11: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 11: Number of Fertilizers,application_trips,Application Trips
+Application Trip 11: Fertilizer,application_trips,Application Trips
+Application Trip 12: Timing,application_trips,Application Trips
+Application Trip 12: Method,application_trips,Application Trips
+Application Trip 12: Number of Herbicides,application_trips,Application Trips
+Application Trip 12: Number of Insecticides,application_trips,Application Trips
+Application Trip 12: Number of Fungicides,application_trips,Application Trips
+Application Trip 12: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 12: Number of Fumigants,application_trips,Application Trips
+Application Trip 12: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 12: Number of Fertilizers,application_trips,Application Trips
+Application Trip 12: Fertilizer,application_trips,Application Trips
+Application Trip 13: Timing,application_trips,Application Trips
+Application Trip 13: Method,application_trips,Application Trips
+Application Trip 13: Number of Herbicides,application_trips,Application Trips
+Application Trip 13: Number of Insecticides,application_trips,Application Trips
+Application Trip 13: Number of Fungicides,application_trips,Application Trips
+Application Trip 13: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 13: Number of Fumigants,application_trips,Application Trips
+Application Trip 13: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 13: Number of Fertilizers,application_trips,Application Trips
+"Application Trip 13, Fertilizer 1: Fertilizer Type",application_trips,Application Trips
+"Application Trip 13, Fertilizer 1: Fertilizer Rate",application_trips,Application Trips
+"Application Trip 13, Fertilizer 1: Fertilizer Rate Units",application_trips,Application Trips
+"Application Trip 13, Fertilizer 1: Fertilizer Custom Rate Nitrogen (lb/acre)",application_trips,Application Trips
+"Application Trip 13, Fertilizer 1: Fertilizer Custom Rate Phosphorus (lb/acre)",application_trips,Application Trips
+"Application Trip 13, Fertilizer 1: Fertilizer Custom Rate Potassium (lb/acre)",application_trips,Application Trips
+"Application Trip 13, Fertilizer 1: Fertilizer Custom Blend Nitrogen (%)",application_trips,Application Trips
+"Application Trip 13, Fertilizer 1: Fertilizer Custom Blend Phosphorus (%)",application_trips,Application Trips
+"Application Trip 13, Fertilizer 1: Fertilizer Custom Blend Potassium (%)",application_trips,Application Trips
+Application Trip 14: Timing,application_trips,Application Trips
+Application Trip 14: Method,application_trips,Application Trips
+Application Trip 14: Number of Herbicides,application_trips,Application Trips
+Application Trip 14: Number of Insecticides,application_trips,Application Trips
+Application Trip 14: Number of Fungicides,application_trips,Application Trips
+Application Trip 14: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 14: Number of Fumigants,application_trips,Application Trips
+Application Trip 14: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 14: Number of Fertilizers,application_trips,Application Trips
+Application Trip 14: Fertilizer,application_trips,Application Trips
+Application Trip 15: Timing,application_trips,Application Trips
+Application Trip 15: Method,application_trips,Application Trips
+Application Trip 15: Number of Herbicides,application_trips,Application Trips
+Application Trip 15: Number of Insecticides,application_trips,Application Trips
+Application Trip 15: Number of Fungicides,application_trips,Application Trips
+Application Trip 15: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 15: Number of Fumigants,application_trips,Application Trips
+Application Trip 15: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 15: Number of Fertilizers,application_trips,Application Trips
+Application Trip 15: Fertilizer,application_trips,Application Trips
+Application Trip 16: Timing,application_trips,Application Trips
+Application Trip 16: Method,application_trips,Application Trips
+Application Trip 16: Number of Herbicides,application_trips,Application Trips
+Application Trip 16: Number of Insecticides,application_trips,Application Trips
+Application Trip 16: Number of Fungicides,application_trips,Application Trips
+Application Trip 16: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 16: Number of Fumigants,application_trips,Application Trips
+Application Trip 16: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 16: Number of Fertilizers,application_trips,Application Trips
+Application Trip 16: Fertilizer,application_trips,Application Trips
+Application Trip 17: Timing,application_trips,Application Trips
+Application Trip 17: Method,application_trips,Application Trips
+Application Trip 17: Number of Herbicides,application_trips,Application Trips
+Application Trip 17: Number of Insecticides,application_trips,Application Trips
+Application Trip 17: Number of Fungicides,application_trips,Application Trips
+Application Trip 17: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 17: Number of Fumigants,application_trips,Application Trips
+Application Trip 17: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 17: Number of Fertilizers,application_trips,Application Trips
+Application Trip 17: Fertilizer,application_trips,Application Trips
+Application Trip 18: Timing,application_trips,Application Trips
+Application Trip 18: Method,application_trips,Application Trips
+Application Trip 18: Number of Herbicides,application_trips,Application Trips
+Application Trip 18: Number of Insecticides,application_trips,Application Trips
+Application Trip 18: Number of Fungicides,application_trips,Application Trips
+Application Trip 18: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 18: Number of Fumigants,application_trips,Application Trips
+Application Trip 18: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 18: Number of Fertilizers,application_trips,Application Trips
+Application Trip 18: Fertilizer,application_trips,Application Trips
+Application Trip 19: Timing,application_trips,Application Trips
+Application Trip 19: Method,application_trips,Application Trips
+Application Trip 19: Number of Herbicides,application_trips,Application Trips
+Application Trip 19: Number of Insecticides,application_trips,Application Trips
+Application Trip 19: Number of Fungicides,application_trips,Application Trips
+Application Trip 19: Number of Growth Regulator Aids,application_trips,Application Trips
+Application Trip 19: Number of Fumigants,application_trips,Application Trips
+Application Trip 19: Number of Harvest Aids,application_trips,Application Trips
+Application Trip 19: Number of Fertilizers,application_trips,Application Trips
+Application Trip 19: Fertilizer,application_trips,Application Trips
+Number of Manure Applications,application_trips,Application Trips
+Manure Application 1: Timing,application_trips,Application Trips
+Manure Application 1: Method,application_trips,Application Trips
+Manure Application 1: Manure Type,application_trips,Application Trips
+Manure Application 1: Manure Amount,application_trips,Application Trips
+Manure Application 1: Manure Amount Units,application_trips,Application Trips
+Manure Application 1: Rice Only: Organic Fertilizer Type,application_trips,Application Trips
+Manure Application 1: Pounds of N per Acre (lb/acre),application_trips,Application Trips
+Manure Application 1: Pounds of P per Acre (lb/acre),application_trips,Application Trips
+Number of Harvests / Cuttings,application_trips,Application Trips
+Harvest 1: Entered Yield,application_trips,Application Trips
+Harvest 1: Entered Yield Units,application_trips,Application Trips
+Harvest 1: Estimated Non-Irrigated Yield,application_trips,Application Trips
+Harvest 1: Estimated Non-Irrigated Yield Units,application_trips,Application Trips
+Harvest 1: Alfalfa Only: Average Harvest Moisture (%),application_trips,Application Trips
+Harvest 1: Alfalfa Only: Harvest Type,application_trips,Application Trips
+Harvest 1: Rice Only: How is your yield calculated?,application_trips,Application Trips
+Harvest 1: Rice Only: Did you harvest a ratoon crop?,application_trips,Application Trips
+Harvest 1: Sugar Beets Only: Percent Sugar (%),application_trips,Application Trips
+Harvest 1: Did you abandon or not harvest any acres you planted for this year?,application_trips,Application Trips
+Harvest 1: Harvested Area (ac),application_trips,Application Trips
+Harvest 1: Difference Reason,application_trips,Application Trips
+Harvest 1: Drying System,application_trips,Application Trips
+Harvest 1: Alfalfa Drying System,application_trips,Application Trips
+Harvest 1: Enter exact drying energy amount?,application_trips,Application Trips
+Harvest 1: Points of Moisture Removed from Drying (%),application_trips,Application Trips
+Harvest 1: Drying Energy Source,application_trips,Application Trips
+Harvest 1: Drying Electric Amount (kwh),application_trips,Application Trips
+Harvest 1: Drying Fuel Type,application_trips,Application Trips
+Harvest 1: Drying Fuel Amount,application_trips,Application Trips
+Harvest 1: Drying Fuel Amount Units,application_trips,Application Trips
+Harvest 1: Cotton Only: Moisture at Ginning,application_trips,Application Trips
+Harvest 1: Peanuts Only: What is the initial moisture content when delivered to the buying point? (%),application_trips,Application Trips
+Harvest 1: Distance from field to point of sale (miles),application_trips,Application Trips
+Harvest 1: Did you haul back a load?,application_trips,Application Trips
+Harvest 1: Transportation Fuel Type,application_trips,Application Trips
+composite_field,application_trips,Application Trips
+"Application Trip 16, Fertilizer 1: Fertilizer Custom Blend Nitrogen %",application_trips,Application Trips
+"Application Trip 16, Fertilizer 1: Fertilizer Custom Blend Phosphorus %",application_trips,Application Trips
+"Application Trip 16, Fertilizer 1: Fertilizer Custom Blend Potassium %",application_trips,Application Trips
+"Application Trip 16, Fertilizer 1: Slow Release",application_trips,Application Trips
+Number of Manure Applications,manure_applications,Manure Applications
+Manure Application 1: Rice Only: Organic Fertilizer Type,manure_applications,Manure Applications
+Manure Application 1: Pounds of N per Acre (lb/acre),manure_applications,Manure Applications
+Manure Application 1: Pounds of P per Acre (lb/acre),manure_applications,Manure Applications
+Manure Application 1: Manure Type,manure_applications,Manure Applications
+Manure Application 1: Manure Amount,manure_applications,Manure Applications
+Number of Harvest Cutting Applications,harvest_questions,Harvest Questions
+Harvest Application 1: Sugar Beets Only: Percent Sugar,harvest_questions,Harvest Questions
+Harvest Application 1: Estimated Non-Irrigated Yield,harvest_questions,Harvest Questions
+Harvest Application 1: Alfalfa Only: Average Harvest Moisture,harvest_questions,Harvest Questions
+Harvest Application 1: Alfalfa Only: Harvest Type,harvest_questions,Harvest Questions
+Harvest Application 1: Rice Only: How is your yield calculated?,harvest_questions,Harvest Questions
+Harvest Application 1: Rice Only: Did you harvest a ratoon crop?,harvest_questions,Harvest Questions
+Harvest Application 1: Did you abandon or not harvest any acres you planted for this year?,harvest_questions,Harvest Questions
+Harvest Application 1: Harvested Acres,harvest_questions,Harvest Questions
+Harvest Application 1: Difference Reason,harvest_questions,Harvest Questions
+Harvest Application 1: Distance from field to point of sale (miles),harvest_questions,Harvest Questions
+Harvest Application 1: Did you haul back a load?,harvest_questions,Harvest Questions
+Harvest Application 1: Fuel Type,harvest_questions,Harvest Questions
+Harvest Application 1: Drying System,harvest_questions,Harvest Questions
+Harvest Application 1: Alfalfa Drying System,harvest_questions,Harvest Questions
+Harvest Application 1: Enter exact drying energy amount?,harvest_questions,Harvest Questions
+Harvest Application 1: Points of Moisture Removed from Drying,harvest_questions,Harvest Questions
+Harvest Application 1: Drying Energy Source,harvest_questions,Harvest Questions
+Harvest Application 1: Drying Electric Amount (kwh / yr),harvest_questions,Harvest Questions
+Harvest Application 1: Drying Fuel Type,harvest_questions,Harvest Questions
+Harvest Application 1: Drying Fuel Amount,harvest_questions,Harvest Questions
+Harvest Application 1: Cotton Only: Moisture at Ginning,harvest_questions,Harvest Questions
+Harvest Application 1: Peanuts Only: What is the initial moisture content when delivered to the buying point?,harvest_questions,Harvest Questions
