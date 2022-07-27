@@ -1,0 +1,13 @@
+name: FtM_QA-tool
+title: FtM_QA-tool
+username:
+account: fieldprintplatformqa
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6702637
+bundleId: 6138879
+url: https://fieldprintplatformqa.shinyapps.io/FtM_QA-tool/
+when: 1658936393.11234
+lastSyncTime: 1658936393.11239
+asMultiple: FALSE
+asStatic: FALSE
