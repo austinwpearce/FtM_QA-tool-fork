@@ -105,11 +105,7 @@ server <- function(input, output, session){
                                             replacement = ""),
              `All Irrigation Water Applied (acre inch / acre)` =
                `Groundwater Irrigation: Water Applied (acre_inch / acre)` +
-               `Surface Water Irrigation: Water Applied (acre_inch / acre)`) %>% 
-      #-trying to rename manure column 7/22
-      rename("Manure Application 1: Pounds of manure N applied per acre (lbs N/acre)" = 
-               "Manure Application 1: Pounds of N per Acre (lb/acre)")
-    #%>%
+               `Surface Water Irrigation: Water Applied (acre_inch / acre)`) #%>%
     # 2021-09-03 Lime content has a proper name now
     #  rename("Lime Amount (short ton / acre)" = `Product Amount (ton / acre)`)
 
@@ -402,7 +398,7 @@ server <- function(input, output, session){
       ggplot(aes(x = `Crop Year`, y = get(y_input))) +
       geom_boxplot(width = 0.2, outlier.shape = NA) +
       geom_jitter(width = 0.05, height = 0.05)+
-      labs(x = "Crop Year", y = paste(stringr::str_wrap(y_input, width = 20))) +
+      labs(x = "Crop Year", y = paste(stringr::str_wrap(y_input, width = 30))) +
       facet_wrap(~ Crop, scales = "free", ncol = 2) +
       ggthemes::theme_base() +
       theme(rect = element_rect(fill = "white", colour = "white"), 
@@ -718,7 +714,7 @@ server <- function(input, output, session){
       y_input <- input$chem_subcomponents
       validate(need(chem_crop_years(), message = "No applications were found for the selected category"))
     } else if (input$fert_options == "N from Manure") {
-      y_input <- "Manure Application 1: Pounds of manure N applied per acre (lbs N/acre)"
+      y_input <- "Manure Application 1: Pounds of N per Acre (lb/acre)"
     }
     
     # Dropdown options for Y-axis variable and crop year
@@ -743,7 +739,7 @@ server <- function(input, output, session){
       ggplot(aes(x = `Crop Year`, y = get(y_input))) +
       geom_boxplot(width = 0.2, outlier.shape = NA) +
       geom_jitter(width = 0.05, height = 0.05) +
-      labs(x = "Crop Year", y = paste(stringr::str_wrap(y_input, width = 20))) +
+      labs(x = "Crop Year", y = paste(stringr::str_wrap(y_input, width = 30))) +
       facet_wrap(~ Crop, scales = "free", ncol = 2) +
       ggthemes::theme_base() +
       theme(rect = element_rect(fill = "white", color = "white"), 
@@ -1547,7 +1543,7 @@ server <- function(input, output, session){
       #               input$sandbox_y_dropdown, ": ", get(input$sandbox_y_dropdown)))) +
       #geom_point() +
       geom_jitter(width = 0.05, size = 2) +
-      labs(y = paste(stringr::str_wrap(input$sandbox_y_dropdown, width = 20)), 
+      labs(y = paste(stringr::str_wrap(input$sandbox_y_dropdown, width = 30)), 
            x = paste(input$sandbox_x_dropdown), color = paste(input$sandbox_grouping_var)) + #,
       #     title = paste("X-axis Variable:", input$sandbox_x_dropdown, "|",
       #                   "Y-axis Variable:", input$sandbox_y_dropdown)) +
